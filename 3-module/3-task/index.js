@@ -9,6 +9,7 @@ function camelize(str) {
       }
     });
   str = arr1.join('');
+  return str;
 }
 
  

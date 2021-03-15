@@ -1,8 +1,13 @@
 function showSalary(users, age) {
-  userRange = users.map(function (item, index) {
+  let usersFilter = users.filter(function (item, index) {
     if (item.age <= age) {
-      return item.name + item.balance;
-    };
+      return item;
+    }
   });
-  return userRange.join('/n');
+
+  let usersRange = usersFilter.map(function (item) {
+    return item.name + ', ' + item.balance;
+  });
+  let usersStr = usersRange.join('\n')
+  return usersStr;
 }
