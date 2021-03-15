@@ -11,7 +11,7 @@ function getMinMax(str) {
 
   let arrNumber = arrDeleteComma.map(function (item) {
     if (item != '') {
-      return Number(item); // почему код не работает без Number? как-будто числа 10, 73, -5.8, -5.3 возвращаются как строки а не числа и их приходится принудительно преобразовывать в числа. Почему?  
+      return Number(item);  
     };
   });
 
