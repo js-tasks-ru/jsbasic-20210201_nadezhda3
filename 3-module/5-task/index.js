@@ -1,4 +1,5 @@
 function getMinMax(str) {
+
   // ваш код...
 
 
@@ -37,5 +38,6 @@ function getMinMax(str) {
   };
 
   return result;
+
 
 }
